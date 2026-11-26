@@ -1,6 +1,6 @@
 import { describe, expectTypeOf, it } from 'vitest';
 import { chain } from './chain.ts';
-import { constant } from './constant.ts';
+import { constant } from './providers/constant.ts';
 import type { Provider } from './provider.ts';
 
 const syncString = (): string => '';

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { chain } from './chain.ts';
-import { constant } from './constant.ts';
+import { constant } from './providers/constant.ts';
 
 describe('chain', () => {
   it('passes the value to make the next provider', () => {

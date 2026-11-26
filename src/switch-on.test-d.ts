@@ -1,5 +1,5 @@
 import { describe, expectTypeOf, it } from 'vitest';
-import { constant } from './constant.ts';
+import { constant } from './providers/constant.ts';
 import { switchOn } from './switch-on.ts';
 
 const appEnv = (): 'local' | 'test' | 'production' => 'local';
