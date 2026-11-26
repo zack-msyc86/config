@@ -203,6 +203,47 @@ importers:
         specifier: ^5.1.1
         version: 5.1.1(@types/node@26.6.7)(vite@8.3.8(@types/node@26.6.7)(yaml@2.9.1))
 
+  examples/aws-lambda:
+    dependencies:
+      '@aws-lambda-powertools/parameters':
+        specifier: 2.37.0
+        version: 2.37.0(@aws-sdk/client-secrets-manager@3.1177.0)(@aws-sdk/client-ssm@3.1177.0)
+      '@aws-sdk/client-secrets-manager':
+        specifier: 3.1177.0
+        version: 3.1177.0
+      '@aws-sdk/client-ssm':
+        specifier: 3.1177.0
+        version: 3.1177.0
+      '@zack-msyc86/config':
+        specifier: workspace:*
+        version: link:../..
+    devDependencies:
+      '@tsconfig/strictest':
+        specifier: 2.0.9
+        version: 2.0.9
+      '@types/node':
+        specifier: 26.6.7
+        version: 26.6.7
+      typescript:
+        specifier: 7.0.2
+        version: 7.0.2
+
+  examples/node:
+    dependencies:
+      '@zack-msyc86/config':
+        specifier: workspace:*
+        version: link:../..
+    devDependencies:
+      '@tsconfig/strictest':
+        specifier: 2.0.9
+        version: 2.0.9
+      '@types/node':
+        specifier: 26.6.7
+        version: 26.6.7
+      typescript:
+        specifier: 7.0.2
+        version: 7.0.2
+
 packages:
 
   '@aws-lambda-powertools/commons@2.37.0':

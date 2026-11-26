@@ -27,6 +27,7 @@
     "test:watch": "vitest",
     "lint": "oxlint",
     "test:type": "tsc --noEmit",
+    "test:examples": "pnpm --filter './examples/*' run typecheck",
     "format": "oxfmt",
     "format:check": "oxfmt --check",
     "changeset": "changeset",

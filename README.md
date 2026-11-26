@@ -135,6 +135,11 @@ const port = chain(env('PORT'), (value) => () => {
 // () => number
 ```
 
+## Examples
+
+- [Node.js](./examples/node): synchronous and asynchronous providers, `switchOn`, `chain`, and a provider you write yourself
+- [AWS Lambda](./examples/aws-lambda): Secrets Manager and Parameter Store
+
 ## License
 
 MIT
