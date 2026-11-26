@@ -1,0 +1,16 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@4.0.1/schema.json",
+  "changelog": [
+    "@changesets/changelog-github",
+    {
+      "repo": "zack-msyc86/config"
+    }
+  ],
+  "commit": false,
+  "access": "public",
+  "baseBranch": "main",
+  "privatePackages": {
+    "version": false,
+    "tag": false
+  }
+}

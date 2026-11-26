@@ -1,0 +1,60 @@
+{
+  "name": "@zack-msyc86/config",
+  "version": "0.0.0",
+  "description": "Read values given from outside an application (environment variables, AWS Secrets Manager, Parameter Store, anything) in one uniform way.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zack-msyc86/config.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./aws": "./dist/providers/aws/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "scripts": {
+    "build": "tsdown",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "oxlint",
+    "test:type": "tsc --noEmit",
+    "test:examples": "pnpm --filter './examples/*' run typecheck",
+    "format": "oxfmt",
+    "format:check": "oxfmt --check",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "pnpm run build && changeset publish"
+  },
+  "devDependencies": {
+    "@aws-lambda-powertools/parameters": "^2.0.0",
+    "@aws-sdk/client-secrets-manager": "^3.1177.0",
+    "@aws-sdk/client-ssm": "^3.1177.0",
+    "@changesets/changelog-github": "^1.0.1",
+    "@changesets/cli": "^3.0.3",
+    "@tsconfig/strictest": "^2.0.9",
+    "@types/node": "^26.6.7",
+    "oxfmt": "^0.80.0",
+    "oxlint": "^1.95.0",
+    "tsdown": "^0.23.7",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.1"
+  },
+  "peerDependencies": {
+    "@aws-lambda-powertools/parameters": "^2.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@aws-lambda-powertools/parameters": {
+      "optional": true
+    }
+  },
+  "packageManager": "pnpm@12.15.0"
+}

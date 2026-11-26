@@ -1,0 +1,19 @@
+{
+  "name": "example-aws-lambda",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@aws-lambda-powertools/parameters": "2.37.0",
+    "@aws-sdk/client-secrets-manager": "3.1177.0",
+    "@aws-sdk/client-ssm": "3.1177.0",
+    "@zack-msyc86/config": "workspace:*"
+  },
+  "devDependencies": {
+    "@tsconfig/strictest": "2.0.9",
+    "@types/node": "26.6.7",
+    "typescript": "7.0.2"
+  }
+}
